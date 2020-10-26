@@ -1,4 +1,5 @@
 all: minisat22
+	(cd ../bin; ln -s minisat22_simp minisat)
 
 minisat22: minisat-2.2.0.tar.gz
 	-rm -rf minisat
