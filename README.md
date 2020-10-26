@@ -1,1 +1,1 @@
-# solvers-setup
+# cspsat-setup
