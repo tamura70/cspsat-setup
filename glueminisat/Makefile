@@ -1,5 +1,5 @@
 all: glueminisat2210 glueminisat228
-	(cd ../bin; ln -s glueminisat2210_simp glueminisat)
+	(cd ../bin; ln -s glueminisat228_simp glueminisat)
 
 glueminisat2210: glueminisat-2.2.10-5.zip
 	-rm -rf glueminisat-2.2.10-5
