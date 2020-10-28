@@ -3,7 +3,7 @@ all: clasp335
 
 clasp335: clingo-5.4.0-linux-x86_64.tar.gz
 	-rm -rf clingo-5.4.0-linux-x86_64
-	tar xfv clingo-5.4.0-linux-x86_64.tar.gz
+	tar xzf clingo-5.4.0-linux-x86_64.tar.gz
 	cp -p clingo-5.4.0-linux-x86_64/clasp ../bin/clasp335
 	cp -p clingo-5.4.0-linux-x86_64/gringo ../bin/gringo540
 	cp -p clingo-5.4.0-linux-x86_64/clingo ../bin/clingo540

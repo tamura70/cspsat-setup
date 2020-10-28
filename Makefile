@@ -1,7 +1,8 @@
 all:
 	$(MAKE) -C minisat
-	$(MAKE) -C kissat
+	$(MAKE) -C glucose
 	$(MAKE) -C glueminisat
+	$(MAKE) -C kissat
 	$(MAKE) -C cryptominisat
 	$(MAKE) -C clasp
 	$(MAKE) -C sugar
