@@ -6,6 +6,7 @@ all:
 	$(MAKE) -C cryptominisat
 	$(MAKE) -C clasp
 	$(MAKE) -C sugar
+	$(MAKE) -C misc
 
 install:
 	cp -p bin/* /usr/local/bin/
