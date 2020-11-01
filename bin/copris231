@@ -1,0 +1,4 @@
+#!/bin/sh
+[ -n "$JAVA_OPTS" ] || export JAVA_OPTS="-Xmx2G -Xms512M -Xss64M"
+JAR=/usr/local/lib/copris/copris-all-v2-3-1.jar
+exec scala -cp .:$JAR $*
