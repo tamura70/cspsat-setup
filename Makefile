@@ -8,6 +8,7 @@ all:
 	$(MAKE) -C clasp
 	$(MAKE) -C sugar
 	$(MAKE) -C copris
+	$(MAKE) -C minisatp
 	$(MAKE) -C z3
 	$(MAKE) -C misc
 
