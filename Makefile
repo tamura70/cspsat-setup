@@ -2,11 +2,13 @@ all:
 	$(MAKE) -C minisat
 	$(MAKE) -C glucose
 	$(MAKE) -C glueminisat
+	$(MAKE) -C cadical
 	$(MAKE) -C kissat
 	$(MAKE) -C cryptominisat
 	$(MAKE) -C clasp
 	$(MAKE) -C sugar
 	$(MAKE) -C copris
+	$(MAKE) -C z3
 	$(MAKE) -C misc
 
 install:

@@ -1,0 +1,13 @@
+--- minisatp-master/PbSolver.h.orig	2012-10-02 20:42:07.000000000 +0900
++++ minisatp-master/PbSolver.h	2020-12-28 22:50:31.849039511 +0900
+@@ -32,6 +32,10 @@
+ using Minisat::lbool;
+ using Minisat::mkLit;
+ using Minisat::lit_Undef;
++using Minisat::l_True; // Added by N.T.
++using Minisat::l_False; // Added by N.T.
++using Minisat::l_Undef; // Added by N.T.
++using Minisat::var_Undef; // Added by N.T.
+ 
+ //=================================================================================================
+ // Linear -- a class for storing pseudo-boolean constraints:

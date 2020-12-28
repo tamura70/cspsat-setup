@@ -1,0 +1,2 @@
+#!/bin/sh
+exec java -Xmx2g -jar /usr/local/lib/sat4j/sat4j-pb.jar $*

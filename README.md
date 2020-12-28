@@ -12,12 +12,13 @@
 - [X] glueminisat <http://glueminisat.nabelab.org/>
 - [X] minisat <http://minisat.se/>
 - [X] glucose <https://www.labri.fr/perso/lsimon/glucose/>
+- [X] cadical <http://fmv.jku.at/cadical/>
 - [X] kissat <http://fmv.jku.at/kissat/>
 - [X] clingo, gringo, clasp <https://potassco.org/>
 - [X] cryptominisat <https://github.com/msoos/cryptominisat>
-- [ ] sat4j, sat4jpb <https://www.sat4j.org/>
-- [ ] z3
-- [ ] minisatp
+- [X] sat4j, sat4j-pb <https://www.sat4j.org/>
+- [X] z3 <https://github.com/Z3Prover/z3>
+- [X] minisatp <https://github.com/niklasso/minisatp>
 
 ## Misc
 

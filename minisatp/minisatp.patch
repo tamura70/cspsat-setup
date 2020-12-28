@@ -1,0 +1,35 @@
+--- minisatp-master/PbSolver.h	2012-10-02 20:42:07.000000000 +0900
++++ minisatp-master/PbSolver.h.new	2020-12-28 22:50:31.849039511 +0900
+@@ -32,6 +32,10 @@
+ using Minisat::lbool;
+ using Minisat::mkLit;
+ using Minisat::lit_Undef;
++using Minisat::l_True; // Added by N.T.
++using Minisat::l_False; // Added by N.T.
++using Minisat::l_Undef; // Added by N.T.
++using Minisat::var_Undef; // Added by N.T.
+ 
+ //=================================================================================================
+ // Linear -- a class for storing pseudo-boolean constraints:
+--- minisat-master/Makefile	2013-09-25 21:16:18.000000000 +0900
++++ minisat-master/Makefile.new	2020-12-28 22:41:08.455600272 +0900
+@@ -59,7 +59,7 @@
+ SOMINOR=1
+ SORELEASE?=.0#   Declare empty to leave out from library file name.
+ 
+-MINISAT_CXXFLAGS = -I. -D __STDC_LIMIT_MACROS -D __STDC_FORMAT_MACROS -Wall -Wno-parentheses -Wextra
++MINISAT_CXXFLAGS = -I. -D __STDC_LIMIT_MACROS -D __STDC_FORMAT_MACROS -Wall -Wno-parentheses -Wextra -fpermissive
+ MINISAT_LDFLAGS  = -Wall -lz
+ 
+ ECHO=@echo
+--- minisatp-master/Makefile	2012-10-02 20:42:07.000000000 +0900
++++ minisatp-master/Makefile.new	2020-12-28 22:43:01.189516493 +0900
+@@ -64,7 +64,7 @@
+ SOMINOR=0
+ SORELEASE?=.0#   Declare empty to leave out from library file name.
+ 
+-MINISATP_CXXFLAGS = -IADTs -include Global.h -include Main.h -D_FILE_OFFSET_BITS=64 -D __STDC_LIMIT_MACROS -D __STDC_FORMAT_MACROS -Wall -Wno-parentheses -Wextra  $(MCL_INCLUDE) $(MINISAT_INCLUDE)
++MINISATP_CXXFLAGS = -IADTs -include Global.h -include Main.h -D_FILE_OFFSET_BITS=64 -D __STDC_LIMIT_MACROS -D __STDC_FORMAT_MACROS -Wall -Wno-parentheses -Wextra  $(MCL_INCLUDE) $(MINISAT_INCLUDE) -fpermissive
+ MINISATP_LDFLAGS  = -Wall  $(MCL_LIB) $(MINISAT_LIB) -lz -lgmp
+ 
+ ifeq ($(VERB),)
